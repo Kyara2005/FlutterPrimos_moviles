@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _lastPrime = 2;
 
   // Lógica para determinar si un número es primo
-  bool _isPrime(int n) {
+  bool _esPrimo(int n) {
     if (n < 2) return false;
     for (int i = 2; i <= n / 2; i++) {
       if (n % i == 0) return false;
@@ -65,10 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return true;
   }
 
-  void _findNextPrime() {
+  void _siguientePrimo() {
     setState(() {
       int next = _lastPrime + 1;
-      while (!_isPrime(next)) {
+      while (!_esPrimo(next)) {
         next++;
       }
       _lastPrime = next;
@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _findNextPrime,
+        onPressed: _siguientePrimo,
         tooltip: 'Siguiente',
         child: const Icon(Icons.add),
       ),
