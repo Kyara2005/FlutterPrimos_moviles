@@ -86,6 +86,8 @@ Realizar los siguientes pasos:
 ```text
 SDK Manager > SDK Tools
 ```
+![Solucion](https://github.com/user-attachments/assets/4ba3de15-8535-4769-8a3c-b4852289dfea)
+
 
 3. Instalar o habilitar:
 
@@ -112,6 +114,7 @@ Posteriormente verificar nuevamente con:
 ```bash
 flutter doctor
 ```
+![Captura del resultado](https://github.com/user-attachments/assets/d56ef46e-0081-4d63-99a5-15cbb0116071)
 
 ### Licencias de Android
 
@@ -128,11 +131,4 @@ YES
 ```
 
 hasta completar todas las licencias.
-
-## Ejecución del Proyecto
-
-```bash
-flutter pub get
-flutter run
-```
 
